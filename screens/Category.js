@@ -1,29 +1,29 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native'
+import { PRODUCTS } from '../common/constants'
 import ProductListItem from '../components/ProductListItem'
 
 export default function Category({ navigation }) {
-    state = {
-        staCategory: [
-            {
-                id: 1,
-                name: 'san pham 1',
-                img: 'https://i.picsum.photos/id/480/200/300.jpg?hmac=-NCJbhpqFCFd17uR0DXt17Ccp5H073pZLLaStM6erZg',
-                price: '5000000',
-            },
-            {
-                id: 2,
-                name: 'san pham 2',
-                img: 'https://i.picsum.photos/id/894/200/300.jpg?hmac=yPKW_JRjZMfmYXpao6QL5LEt2cYJQdesD-zkL-U-UJs',
-                price: '3400000',
-            },
-        ]
-    }
-    const { staCategory } = this.state
-    return (
-        <>
-            <Text style={styles.txt} >{navigation.state.params.navParamName}</Text>
-            <FlatList data={staCategory}
+    const { navParamItem } = navigation.state.params
+    const [staProducts, setStaProducts] = useState([])
+    useEffect(() => {
+        const _onFetchProducts = async () => {
+            axios.get(`${PRODUCTS}?categoryid=${navParamItem.id}`)
+                .then(res => {
+                    setStaProducts(res.data)
+                })
+                .catch(err => {
+                    alert(err)
+                })
+        }
+        _onFetchProducts()
+    }, [])
+    const element_tmp = (staProducts.length > 0) ?
+        (<>
+            <Text style={styles.txt} >{navParamItem.name}</Text>
+
+            <FlatList data={staProducts}
                 numColumns={2}
                 renderItem={({ item }) => <View style={styles.view}>
                     <ProductListItem propProduct={item} propOnAddToCart={() => alert('Da mua!')} />
@@ -31,8 +31,12 @@ export default function Category({ navigation }) {
                 keyExtractor={arg_item => `${arg_item.id}`}
                 contentContainerStyle={styles.flatlist}
             />
-        </>
-    )
+        </>) :
+        (<>
+            <Text style={styles.txt} >{navParamItem.name}</Text>
+            <Text>KO co san pham nao!</Text>
+        </>)
+    return element_tmp
 }
 
 const styles = StyleSheet.create({

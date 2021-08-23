@@ -28,6 +28,8 @@ yarn run mock-server
 2. authen
 ```shell
 (08/24/21)NC00011462@dotq ~/Downloads# ./ngrok authtoken <your_auth_token>
+->
+ Authtoken saved to configuration file: /Users/NC00011462/.ngrok2/ngrok.yml
 ```
 3.run
 ```shell

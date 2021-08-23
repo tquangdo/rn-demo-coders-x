@@ -7,7 +7,7 @@ import CategoryListItem from '../components/CategoryListItem';
 export default function Categories({ navigation }) {
     const [staCategories, setStaCategories] = useState([])
     useEffect(() => {
-        const _onFetchData = async () => {
+        const _onFetchCategories = async () => {
             axios.get(CATEGORIES)
                 .then(res => {
                     setStaCategories(res.data)
@@ -16,7 +16,7 @@ export default function Categories({ navigation }) {
                     alert(err)
                 })
         }
-        _onFetchData()
+        _onFetchCategories()
     }, [])
     return <>
         <StatusBar barStyle='dark-content' />
@@ -24,7 +24,7 @@ export default function Categories({ navigation }) {
             renderItem={({ item }) => <CategoryListItem
                 propCategory={item}
                 propOnPress={() => navigation.navigate('Category', {
-                    navParamName: item.name
+                    navParamItem: item
                 })} />}
             keyExtractor={arg_item => `${arg_item.id}`}
             contentContainerStyle={styles.list}

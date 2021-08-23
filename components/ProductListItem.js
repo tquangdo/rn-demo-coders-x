@@ -5,7 +5,9 @@ export default function ProductListItem({ propProduct, propOnAddToCart }) {
     return (
         <View style={styles.shadow} >
             <View style={styles.container} >
-                <Image style={styles.img} source={{ uri: propProduct.img }} />
+                <View style={styles.imgcontainer}>
+                    <Image style={styles.img} source={{ uri: propProduct.img }} />
+                </View>
                 <View style={styles.info}>
                     <Text style={styles.name}>{propProduct.name} </Text>
                     <View style={styles.priceRow}>
@@ -35,7 +37,8 @@ const styles = StyleSheet.create({
     container: {
         marginBottom: 20,
         borderRadius: 4,
-        overflow: 'hidden'
+        overflow: 'hidden',
+        backgroundColor: '#fff',
     },
     info: {
         padding: 8,
@@ -46,6 +49,7 @@ const styles = StyleSheet.create({
         borderTopLeftRadius: 4,
         borderBottomLeftRadius: 4,
     },
+    imgcontainer: { alignItems: 'center', padding: 8 },
     name: {
         fontSize: 16,
         marginBottom: 8,

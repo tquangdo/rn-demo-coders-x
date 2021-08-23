@@ -1,0 +1,1 @@
+export const CATEGORIES = 'http://8f0c-58-159-16-244.ngrok.io/categories'

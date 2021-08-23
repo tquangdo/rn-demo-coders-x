@@ -1,0 +1,64 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "truot tuyet",
+            "img": "https://image.flaticon.com/icons/png/512/275/275783.png"
+        },
+        {
+            "id": 2,
+            "name": "an uong",
+            "img": "https://image.flaticon.com/icons/png/512/4310/4310157.png"
+        },
+        {
+            "id": 3,
+            "name": "nhay mua",
+            "img": "https://image.flaticon.com/icons/png/512/3048/3048356.png"
+        },
+        {
+            "id": 4,
+            "name": "ngu",
+            "img": "https://image.flaticon.com/icons/png/512/3012/3012242.png"
+        },
+        {
+            "id": 5,
+            "name": "lam viec",
+            "img": "https://as2.ftcdn.net/v2/jpg/02/70/80/91/500_F_270809132_dBDTC54eEnTmSFkTOzHKTPlTBlwixk5Q.jpg"
+        },
+        {
+            "id": 6,
+            "name": "chup hinh",
+            "img": "https://image.flaticon.com/icons/png/512/1040/1040241.png"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "san pham 1",
+            "img": "https://i.picsum.photos/id/480/200/300.jpg?hmac=-NCJbhpqFCFd17uR0DXt17Ccp5H073pZLLaStM6erZg",
+            "price": "5000000",
+            "categoryid": 1
+        },
+        {
+            "id": 2,
+            "name": "san pham 2",
+            "img": "https://i.picsum.photos/id/894/200/300.jpg?hmac=yPKW_JRjZMfmYXpao6QL5LEt2cYJQdesD-zkL-U-UJs",
+            "price": "3400000",
+            "categoryid": 1
+        },
+        {
+            "id": 3,
+            "name": "san pham 1",
+            "img": "https://i.picsum.photos/id/546/200/300.jpg?hmac=WRVm_tMObPuM2HqJCr5D6N59Mboh73aqEno4MCuu5AE",
+            "price": "9400000",
+            "categoryid": 2
+        },
+        {
+            "id": 4,
+            "name": "san pham 1",
+            "img": "https://i.picsum.photos/id/92/200/300.jpg?hmac=9Eq_kpOk-5TZ2YHExdgGL_iYGHpJNmvUogSdSuZzGYE",
+            "price": "1110000",
+            "categoryid": 3
+        }
+    ]
+}

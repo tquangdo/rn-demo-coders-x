@@ -21,7 +21,11 @@ yarn run mock-server
 3. scan bar code on `expo go` appstore
 
 ## demos
-![demo](screenshots/demo.jpeg)
+![demo1](screenshots/demo1.jpeg)
+![demo2](screenshots/demo2.jpeg)
+![demo3](screenshots/demo3.jpeg)
+![demo4](screenshots/demo4.jpeg)
+![demo5](screenshots/demo5.jpeg)
 
 ## config ngrok
 1. login with github acc: `https://dashboard.ngrok.com/get-started/your-authtoken`

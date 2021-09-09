@@ -40,3 +40,14 @@ yarn run mock-server
 ./ngrok http 3000
 ```
 -> will show http://xxx.ngrok.io -> copy paste into `common/constants.js`
+
+## react-devtools
+1. `yarn add react-devtools`
+2. package.json
+```json
+"scripts": {
+    "react-devtools": "react-devtools",
+    ...
+  },
+```
+3. `yarn run react-devtools` 

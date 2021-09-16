@@ -1,9 +1,9 @@
-# rn-demo-coders-x 🐳
+# rn-expo-demo-coders-x 🐳
 
-![Stars](https://img.shields.io/github/stars/tquangdo/rn-demo-coders-x?color=f05340)
-![Issues](https://img.shields.io/github/issues/tquangdo/rn-demo-coders-x?color=f05340)
-![Forks](https://img.shields.io/github/forks/tquangdo/rn-demo-coders-x?color=f05340)
-[![Report an issue](https://img.shields.io/badge/Support-Issues-green)](https://github.com/tquangdo/rn-demo-coders-x/issues/new)
+![Stars](https://img.shields.io/github/stars/tquangdo/rn-expo-demo-coders-x?color=f05340)
+![Issues](https://img.shields.io/github/issues/tquangdo/rn-expo-demo-coders-x?color=f05340)
+![Forks](https://img.shields.io/github/forks/tquangdo/rn-expo-demo-coders-x?color=f05340)
+[![Report an issue](https://img.shields.io/badge/Support-Issues-green)](https://github.com/tquangdo/rn-expo-demo-coders-x/issues/new)
 
 ## usage
 1.
